@@ -1,0 +1,7 @@
+.DS_Store
+command.log
+default.svf
+results_synthesized.sdc
+results_synthesized.v
+rpt/
+synthesis.ddc

@@ -1,0 +1,4 @@
+create_power_domain PD1 -include {u_block1 u_block2}
+create_power_switch PS1 -domain PD1 -input_supply {VDD} -output_supply {VDD_PD1}
+set_isolation ISO1 -domain PD1 -isolation_condition {VDD = 0} -isolation_output {high} -isolation_sense {negative_edge}
+set_isolation ISO1 -domain PD1 -isolation_cells {ISO_CELL}
